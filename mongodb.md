@@ -35,4 +35,9 @@ mydb
 > show collections
 user
 ```
-* To return all documents in a collection, use **db.COLLECTION_NAME.find()** command.By default, MongoDB generates a unique [ObjectID](https://docs.mongodb.com/manual/reference/method/ObjectId/) identifier that is assigned to the **_id** field in a new document before writing that document to the database.
+* To return all documents in a collection, use **db.COLLECTION_NAME.find()** command. In our case **db.user.find()** By default, MongoDB generates a unique [ObjectID](https://docs.mongodb.com/manual/reference/method/ObjectId/) identifier that is assigned to the **_id** field in a new document before writing that document to the database.
+```
+> **db.user.find()**
+{ "_id" : ObjectId("605b73fcd8d8efdbc75db378"), "name" : "Jane Doe", "age" : 35 }
+{ "_id" : ObjectId("605b78043f4b45f54e83f8ad"), "name" : "John Doe", "age" : 35 }
+```
