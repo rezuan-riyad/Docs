@@ -55,7 +55,7 @@ user
 ```
 ### Insert Row
 ```js
-db.posts.insert({
+> db.posts.insert({
   title : "Post One",
   body : "Body of post one",
   category : "science",
