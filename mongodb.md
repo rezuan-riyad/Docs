@@ -9,4 +9,4 @@ admin 0.000GB
 local  0.000GB
 ```
 * Our newly created databases is not seen here. We need to insert data. To add a document, 
-...use **db.COLLECTION_NAME.insert**
+we need to use **db.COLLECTION_NAME.insert** command.
