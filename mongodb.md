@@ -71,7 +71,7 @@ db.posts.insert({
     name : 'John Doe',
     status: 'author'
   },
-  data: Date()
+  date: new Date()
 })
 ```
 ### Insert Multiple Documents
@@ -110,7 +110,7 @@ db.posts.insertMany([
        name : 'unknown',
        status: 'author'
      },
-     datae: new Date()
+     date: new Date()
    }
 ])
 ```
