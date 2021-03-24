@@ -49,6 +49,6 @@ user
 { "dropped" : "mydb", "ok" : 1 }
 ```
 ### Create Collections
-```bash
+```shell
 > db.createCollection('posts')
 ```
