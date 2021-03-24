@@ -51,4 +51,21 @@ user
 ### Create Collections
 ```shell
 > db.createCollection('posts')
+{ "ok" : 1 }
+```
+### Insert Row
+```shell
+> db.posts.insert({
+... title : "Post One",
+... body : "Body of post one",
+... category : "science",
+... likes : 4,
+... tags : ["news", "events"],
+... user : {
+... name : 'John Doe',
+... status: 'author'
+... },
+... data: Date()
+... })
+WriteResult({ "nInserted" : 1 })
 ```
