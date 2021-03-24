@@ -1,4 +1,5 @@
 # Mongo Shell
+[Cheat Sheet By Traversy Media](https://gist.github.com/bradtraversy/f407d642bdc3b31681bc7e56d95485b6)
 ### Create Database
 * To create a database, use the **use** command. If the database doesn’t exist, then the MongoDB cluster will create it.
 ```bash
