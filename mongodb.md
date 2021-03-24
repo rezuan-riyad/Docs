@@ -43,5 +43,6 @@ user
 ```
 
 ### Drop/Delete a database
-```db.dropDatabase()
+```
+db.dropDatabase()
 ```
