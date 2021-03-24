@@ -41,3 +41,7 @@ user
 { "_id" : ObjectId("605b73fcd8d8efdbc75db378"), "name" : "Jane Doe", "age" : 35 }
 { "_id" : ObjectId("605b78043f4b45f54e83f8ad"), "name" : "John Doe", "age" : 35 }
 ```
+
+### Drop/Delete a database
+```db.dropDatabase()
+```
