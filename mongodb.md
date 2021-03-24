@@ -10,3 +10,8 @@ local  0.000GB
 ```
 * Our newly created databases is not seen here. We need to insert data. To add a document, 
 we need to use **db.COLLECTION_NAME.insert** command.
+```
+> db.user.insert({name: "Jane Doe", age: 35})
+WriteResult({ "nInserted" : 1 })
+
+```
