@@ -43,8 +43,12 @@ user
 //{ "_id" : ObjectId("605b78043f4b45f54e83f8ad"), "name" : "John Doe", "age" : 35 }
 ```
 
-### Drop/Delete a database
+### Drop/Delete a Database
 ```shell
 > db.dropDatabase()
 { "dropped" : "mydb", "ok" : 1 }
+```
+### Create Collections
+```bash
+> db.createCollection('posts')
 ```
