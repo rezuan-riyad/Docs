@@ -54,7 +54,7 @@ user
 { "ok" : 1 }
 ```
 ### Insert Row
-```json
+```js
 db.posts.insert({
 	title : "Post One",
 	body : "Body of post one",
