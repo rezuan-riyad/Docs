@@ -14,6 +14,8 @@ we need to use **db.COLLECTION_NAME.insert** command.
 ```
 > db.user.insert({name: "Jane Doe", age: 35})
 WriteResult({ "nInserted" : 1 })
+> db.user.insert({name: "John Doe", age: 35})
+WriteResult({ "nInserted" : 1 })
 ```
 * Now let's check **show dbs** command again.
 ```
@@ -28,7 +30,7 @@ mydb    0.000GB
 > db
 mydb
 ```
-It turns out that when you entered the use command, then myshinynewdb became the current database.
+It turns out that when we entered the use command, then myshinynewdb became the current database.
 
 * To see all collections, use **show collections** command.
 ```
