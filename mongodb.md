@@ -8,4 +8,4 @@ use mydb
 admin 0.000GB
 local  0.000GB
 ```
-Our newly created databases is not seen here. We need to insert data. To add a document, use **db.<**collection>.insert**
+Our newly created databases is not seen here. We need to insert data. To add a document, use **db.<collection>.insert**
