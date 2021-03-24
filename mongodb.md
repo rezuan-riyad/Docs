@@ -25,13 +25,11 @@ config  0.000GB
 local   0.000GB
 mydb    0.000GB
 ```
-* To find out which database is the current one, enter the **db** command.
+* To find out which database is the current one, enter the **db** command. When we entered the use command, then myshinynewdb became the current database.
 ```
 > db
 mydb
 ```
-It turns out that when we entered the use command, then myshinynewdb became the current database.
-
 * To see all collections, use **show collections** command.
 ```
 > show collections
