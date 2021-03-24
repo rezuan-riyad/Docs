@@ -1,4 +1,5 @@
 # Mongo Shell
+### Create Database
 * To create a database, use the **use** command. If the database doesn’t exist, then the MongoDB cluster will create it.
 ```bash
 > use mydb
@@ -12,6 +13,7 @@ switched to db mydb
 admin 0.000GB
 local  0.000GB
 ```
+### Insert Document
 * Our newly created database is not seen here. We need to insert data. To add a document, 
 we need to use **db.COLLECTION_NAME.insert** command.
 ```shell
@@ -30,7 +32,7 @@ config  0.000GB
 local   0.000GB
 mydb    0.000GB
 ```
-* To find out which database is the current one, enter the **db** command. When we entered the use command, then myshinynewdb became the current database.
+* To find out which database is the current one, enter the **db** command. When we entered the use command, then **mydb** became the current database.
 ```shell
 > db
 mydb
