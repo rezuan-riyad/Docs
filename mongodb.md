@@ -16,3 +16,10 @@ we need to use **db.COLLECTION_NAME.insert** command.
 WriteResult({ "nInserted" : 1 })
 ```
 * Now let's check **show dbs** command again
+```
+> show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+mydb    0.000GB
+```
