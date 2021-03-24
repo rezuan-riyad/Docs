@@ -67,5 +67,6 @@ user
 ... },
 ... data: Date()
 ... })
+...
 WriteResult({ "nInserted" : 1 })
 ```
