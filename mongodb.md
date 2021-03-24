@@ -116,7 +116,5 @@ user
 ```
 ### Find Formatted Documents
 ```shell
-db.posts.find().pretty()
-
-
+> db.posts.find().pretty()
 ```
