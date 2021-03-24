@@ -28,4 +28,4 @@ mydb    0.000GB
 > db
 mydb
 ```
-*It turns out that when you entered the use command, then myshinynewdb became the current database.*
+It turns out that when you entered the use command, then myshinynewdb became the current database.
