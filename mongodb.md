@@ -35,7 +35,6 @@ It turns out that when we entered the use command, then myshinynewdb became the 
 * To see all collections, use **show collections** command.
 ```
 > show collections
-{ "_id" : ObjectId("605b73fcd8d8efdbc75db378"), "name" : "Jane Doe", "age" : 35 }
-{ "_id" : ObjectId("605b78043f4b45f54e83f8ad"), "name" : "John Doe", "age" : 35 }
+user
 ```
-By default, MongoDB generates a unique [ObjectID](https://docs.mongodb.com/manual/reference/method/ObjectId/) identifier that is assigned to the **_id** field in a new document before writing that document to the database. 
+* To return all documents in a collection, use **db.COLLECTION_NAME.find()** command.By default, MongoDB generates a unique [ObjectID](https://docs.mongodb.com/manual/reference/method/ObjectId/) identifier that is assigned to the **_id** field in a new document before writing that document to the database.
