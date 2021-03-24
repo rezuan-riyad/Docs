@@ -44,5 +44,6 @@ user
 
 ### Drop/Delete a database
 ```
-db.dropDatabase()
+> db.dropDatabase()
+{ "dropped" : "mydb", "ok" : 1 }
 ```
