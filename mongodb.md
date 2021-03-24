@@ -74,7 +74,7 @@ user
     name : 'John Doe',
     status: 'author'
   },
-  date: new Date()
+  date: Date()
 })
 ```
 ### Insert Multiple Documents
@@ -90,7 +90,7 @@ user
       name : 'Alen Smith',
       status: 'author'
     },
-    date: new Date()
+    date: Date()
   },
   {
     title : "Post Three",
@@ -101,7 +101,7 @@ user
       name : 'Sarah Joseph',
       status: 'author'
     },
-    date: new Date()
+    date: Date()
   },
   {
      title : "Post Four",
@@ -113,7 +113,7 @@ user
        name : 'unknown',
        status: 'author'
      },
-     date: new Date()
+     date: Date()
    }
 ])
 ```
