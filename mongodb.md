@@ -60,8 +60,8 @@ user
 { "ok" : 1 }
 ```
 ### Insert Document
-```
-db.posts.insert({
+```shell
+> db.posts.insert({
   title : "Post One",
   body : "Body of post one",
   category : "science",
@@ -75,8 +75,8 @@ db.posts.insert({
 })
 ```
 ### Insert Multiple Documents
-```
-db.posts.insertMany([
+```shell
+> db.posts.insertMany([
   {
     title : "Post Two",
     body : "This is Post Two Body. It is about politics. You will find it necessary.",
@@ -115,7 +115,7 @@ db.posts.insertMany([
 ])
 ```
 ### Find Formatted Documents
-```bash
+```shell
 db.posts.find().pretty()
 
 
