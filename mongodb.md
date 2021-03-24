@@ -56,15 +56,15 @@ user
 ### Insert Row
 ```js
 db.posts.insert({
-	title : "Post One",
-	body : "Body of post one",
-	category : "science",
-	likes : 4,
-	tags : ["news", "events"],
-	user : {
-		name : 'John Doe',
-		status: 'author'
-	},
-	data: Date()
+  title : "Post One",
+  body : "Body of post one",
+  category : "science",
+  likes : 4,
+  tags : ["news", "events"],
+  user : {
+    name : 'John Doe',
+    status: 'author'
+  },
+  data: Date()
 })
 ```
