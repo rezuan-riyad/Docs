@@ -29,3 +29,8 @@ mydb    0.000GB
 mydb
 ```
 It turns out that when you entered the use command, then myshinynewdb became the current database.
+
+* To see all collections, use **show collections** command.
+```
+> show collections
+```
