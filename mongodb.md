@@ -53,9 +53,9 @@ user
 > db.createCollection('posts')
 { "ok" : 1 }
 ```
-### Insert Row
-```js
-> db.posts.insert({
+### Insert Document
+```
+db.posts.insert({
   title : "Post One",
   body : "Body of post one",
   category : "science",
@@ -67,4 +67,44 @@ user
   },
   data: Date()
 })
+```
+### Insert Multiple Documents
+```
+db.posts.insertMany([
+	{
+		title : "Post Two",
+		body : "This is Post Two Body. It is about politics. You will find it necessary.",
+		category : "politics",
+		likes : 10,
+		tags : null,
+		user : {
+			name : 'Alen Smith',
+			status: 'author'
+		},
+		date: new Date()
+	},
+	{
+		title : "Post Three",
+		body : "This post is about religious duty. People don't care about it too much.",
+		category : "religion",
+		likes : 2,
+		user : {
+			name : 'Sarah Joseph',
+			status: 'author'
+		},
+		date: new Date()
+	},
+	{
+		title : "Post Four",
+		body : "Body of post Four.",
+		category : "social science",
+		likes : 3,
+		tags : ["news", "events"],
+		user : {
+			name : 'unknown',
+			status: 'author'
+		},
+		datae: new Date()
+	}
+])
 ```
