@@ -43,8 +43,7 @@ user
 ```
 
 ### Drop/Delete a database
-```
+```shell
 > db.dropDatabase()
-<!-- { "dropped" : "mydb", "ok" : 1 }
--->
+{ "dropped" : "mydb", "ok" : 1 }
 ```
