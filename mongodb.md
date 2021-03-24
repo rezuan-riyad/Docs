@@ -114,3 +114,9 @@ db.posts.insertMany([
    }
 ])
 ```
+### Find Formatted Documents
+```bash
+db.posts.find().pretty()
+
+
+```
