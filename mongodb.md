@@ -42,6 +42,7 @@ mydb
 > show collections
 user
 ```
+### Find Documents
 * To return all documents in a collection, use **db.COLLECTION_NAME.find()** command. In our case **db.user.find()** By default, MongoDB generates a unique [ObjectID](https://docs.mongodb.com/manual/reference/method/ObjectId/) identifier that is assigned to the **_id** field in a new document before writing that document to the database.
 ```shell
 > db.user.find()
