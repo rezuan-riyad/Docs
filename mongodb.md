@@ -1,10 +1,10 @@
 # Mongo Shell
 * To create a database, use the **use** command. If the database doesn’t exist, then the MongoDB cluster will create it.
-```shell
-use mydb
+```bash
+> use mydb
 ```
 * **show dbs** command will show all available databases
-```shell
+```bash
 > show dbs
 admin 0.000GB
 local  0.000GB
