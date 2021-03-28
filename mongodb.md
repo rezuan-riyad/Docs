@@ -119,6 +119,7 @@ user
 ])
 ```
 ### Find Formatted Documents
+Here, **posts** is collection name
 ```shell
 > db.posts.find().pretty()
 ```
