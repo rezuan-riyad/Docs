@@ -20,9 +20,9 @@ const ItemSchema = new Schema({
   type: Date
   default: Date.now
  }
+})
 
 // create model
 const Item = mongoose.model('item', ItemSchema)
 module.exports = Item
-})
 ```
