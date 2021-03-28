@@ -22,7 +22,8 @@ const ItemSchema = new Schema({
  }
 })
 
-// create model
+// create model, here, 'item' represent items collection
+// Mongoose pluralize this collection name
 const Item = mongoose.model('item', ItemSchema)
 module.exports = Item
 ```
