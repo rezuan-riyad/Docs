@@ -59,3 +59,85 @@ function App() {
 }
 export default App;
 ```
+
+**code example: useState with arrays of objects**
+```JSX
+import React, { useState } from 'react'
+
+function App() {
+  const [book, setBook] = useState({ author:"", bookName:"", price: "" })
+  const [bookList, setBookList] = useState([])
+
+  const handleChange = (e) => {
+    setBook({
+      ...book,
+      [e.target.name]: e.target.value
+    })
+  }
+
+  const addBook = (e) => {
+    e.preventDefault()
+    setBookList([
+      ...bookList,
+      book
+    ])
+  }
+  return (
+    <div className="container">
+      <div className="addSection">
+
+        <form onSubmit={addBook}>
+          <input 
+          type="text"
+          name="author"
+          value={book.author}
+          placeholder="Author"
+          onChange={handleChange}
+          />
+
+          <input 
+          type="text"
+          name="bookName"
+          value={book.bookName}
+          placeholder="Book Name"
+          onChange={handleChange}
+          />
+
+          <input 
+          type="number"
+          name="price"
+          value={book.price}
+          placeholder="Price"
+          onChange={handleChange}
+          />
+
+          <button>Add To Showcase</button>
+        </form>
+
+        <div className="currentBook">
+          <p>Author: {book.author}</p>
+          <p>Book Name: {book.bookName}</p>
+          <p>Price: {book.price } { book.price !== "" ? "Tk." : null}</p>
+        </div>
+
+      </div>
+      <div className="showCase">
+        {
+          bookList.map((book, i) => {
+            return(
+              <div key={i}>
+                <hr />
+                <p>Author: {book.author}</p>
+                <p>Author: {book.bookName}</p>
+                <p>Author: {book.price}</p>
+              </div>
+            )
+          })
+        }
+      </div>
+    </div>
+  );
+}
+
+export default App;
+```
