@@ -1,13 +1,11 @@
-## useState
+## useState  
 
 **code example: useState with objects**
 ```JSX
 import React, { useState } from 'react'
 
 function App() {
-
   const [value, setValue] = useState({ fname:"", lname:"" })
-  
   return (
     <div className="container">
       <input 
@@ -29,22 +27,20 @@ function App() {
   );
 }
 export default App;
-```
+```  
+  
 **code example: useState with array**
 ```JSX
 import React, { useState } from 'react'
 
 function App() {
-
   const [userList, setUserList] = useState([]) 
   const [user, setUser] = useState('')
-
   const addUser = () => {
     console.log(user)
     setUserList([ ...userList, user])
     setUser('')
   }
-
   return (
     <div className="container">
       <input 
@@ -61,6 +57,5 @@ function App() {
     </div>
   );
 }
-
 export default App;
 ```
