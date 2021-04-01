@@ -141,3 +141,34 @@ function App() {
 
 export default App;
 ```
+**code example: Prevent useEffect’s Callback Firing During Initial Render**
+```JSX
+import React, { useState, useEffect, useRef} from 'react'
+
+export default function Example(){
+  const [press, setPress] = useState(false);
+  const initRender = useRef(false)
+  
+  useEffect(() => {
+    if(initRender.current) {
+      // code that run after initial rendering
+      console.log('rendered')
+    } else {
+      initRender.current = true
+    }
+  }, [press]);
+
+  return(
+    <>
+      {press && <div>The button has been pressed!</div>}
+      <button
+        onClick={() => {
+          setPress(!press);
+        }}
+      >
+        Click!
+      </button>
+    </>
+  )
+}
+```
