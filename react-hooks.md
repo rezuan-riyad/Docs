@@ -141,33 +141,42 @@ function App() {
 
 export default App;
 ```
+## useEffect
 **code example: Prevent useEffect’s Callback Firing During Initial Render**
 ```JSX
 import React, { useState, useEffect, useRef} from 'react'
 
-export default function Example(){
-  const [press, setPress] = useState(false);
+export default function SignUp(){
+  const [input, setInput] = useState('')
+  const [cities, setCities] = useState([])
   const initRender = useRef(false)
-  
-  useEffect(() => {
-    if(initRender.current) {
-      // code that doesn't run  during initial rendering
-      console.log('rendered')
+
+  useEffect(()=>{
+    let controller = new AbortController()
+    let signal = controller.signal
+    if (initRender.current && input !== '') {
+      fetch(`http://localhost:5000/find/${input}`, { signal : signal })
+        .then( res => res.json())
+        .then( data => {
+          console.log(data)
+          setCities(data)
+        })
+        .catch( err => console.log(err))
     } else {
       initRender.current = true
     }
-  }, [press]);
-
+    return () => {
+      controller.abort()
+    }
+  },[input])
   return(
     <>
-      {press && <div>The button has been pressed!</div>}
-      <button
-        onClick={() => {
-          setPress(!press);
-        }}
-      >
-        Click!
-      </button>
+      <input type="text" value={input} onChange={ e => setInput(e.target.value) }/>
+      {
+        cities.map( (city, i) => {
+          return <p key={i}>{city.city}</p>
+        })
+      }
     </>
   )
 }
