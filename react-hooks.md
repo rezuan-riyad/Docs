@@ -151,7 +151,7 @@ export default function Example(){
   
   useEffect(() => {
     if(initRender.current) {
-      // code that run after initial rendering
+      // code that doesn't run  during initial rendering
       console.log('rendered')
     } else {
       initRender.current = true
