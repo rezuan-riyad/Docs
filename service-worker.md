@@ -43,3 +43,12 @@ self.addEventListener('activate', e => {
     )
 })
 ```
+**Fetching the cached site**
+```javascript
+self.addEventListener('fetch', e => {
+    console.log('service worker fetching')
+    e.respondWith(fetch(e.request).catch( () => {
+        caches.match(e.request)
+    }))
+})
+```
