@@ -123,3 +123,12 @@ Here, **posts** is collection name
 ```shell
 > db.posts.find().pretty()
 ```
+
+# MongoDB Operators
+## Update Operators
+* **$addToSet** operator adds a value to an array unless the value is already present, in which case it does nothing to that array.
+```
+{ 
+  $addToSet: { <field1>: <value1>, ... } 
+}
+```
