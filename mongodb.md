@@ -125,6 +125,7 @@ Here, **posts** is collection name
 ```
 
 # MongoDB Operators
+[Official Docs](https://docs.mongodb.com/manual/reference/operator/update/)
 ## Update Operators
 * **$addToSet** operator adds a value to an array unless the value is already present, in which case it does nothing to that array.
 ```
