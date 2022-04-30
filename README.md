@@ -14,3 +14,8 @@ After installation reboot computer.
 ```
 sudo dpkg -i package_file.deb
 ```
+### Disable Or Enable input device
+```
+xinput -list
+xinput foat <ID>
+```
